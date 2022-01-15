@@ -47,7 +47,7 @@ MonthlyReport::MonthlyReport(std::string file)
 		std::getline(inputFile, line);
 		for (const auto a : separators)
 		{
-			if (line.find(a))
+			if (line.find(a) <= line.size())
 			{
 				separator = a;
 				break;
